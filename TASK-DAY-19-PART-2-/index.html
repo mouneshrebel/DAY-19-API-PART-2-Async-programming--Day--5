@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="icons8-dog-100.png">
+		<title>Dog Cards</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h1>Dog's Images based on the Stanford Dogs Dataset</h1>
+
+			<nav id="navBar">
+				<input
+					type="search"
+					id="input"
+					placeholder="Click to select a breed from the list"
+					oninput="changePage(1)"
+					list="breedsList"
+				/>
+				<button type="submit" onclick="changePage(1)">Submit</button>
+			</nav>
+
+			<datalist id="breedsList"></datalist>
+
+			<div id="dogCards"></div>
+			<div id="paginateBox"></div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

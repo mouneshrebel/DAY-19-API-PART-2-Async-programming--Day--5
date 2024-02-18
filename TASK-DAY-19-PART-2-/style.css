@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-align: start;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	background-color: rgb(115, 169, 121);
+}
+
+#container {
+	height: 98vh;
+	width: 100%;
+}
+
+h1 {
+	margin: 10px 0 20px 0;
+	text-align: center;
+	font-size: 3rem;
+}
+
+#navBar {
+	height: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+input {
+	height: 50px;
+	width: 75%;
+	font-size: x-large;
+	padding: 2px;
+}
+
+button {
+	height: 50px;
+	width: 15%;
+	font-size: x-large;
+}
+
+#dogCards {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.card {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 5px 5px 25px 5px;
+	margin: 5px;
+	height: 17rem;
+	width: 20rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media only screen and (1500px <= width <= 2000px) {
+  .card {
+    height: 22rem;
+    width: 25rem;
+  }
+}
+
+img {
+	max-height: 95%;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.cardBody {
+	height: 5%;
+}
+
+.cardBody a {
+	font-size: 150%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.pagination-container {
+	display: flex;
+	gap: 10px;
+	margin: auto;
+	width: 80%;
+	background: #fff;
+	color: #000000;
+	padding: 10px 40px;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination-container a {
+	display: flex;
+	height: 75px;
+	width: 75px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 35px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	border-radius: 100%;
+	background-color: rgb(0, 0, 0);
+}
+
+.pagination-container a:hover {
+	background: rgb(255, 58, 58);
+}
+
+#pageNum {
+	font-size: 50px;
+	margin-left: 10px;
+}
